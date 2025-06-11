@@ -1,0 +1,78 @@
+.container {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.wrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.tableContainer {
+  background-color: var(--tbody);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+}
+
+.header {
+  background-color: var(--thead);
+}
+
+.headerCell {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.sortButton {
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.2s;
+}
+
+.sortButton:hover {
+  color: var(--blue);
+}
+
+.sortIndicator {
+  margin-left: 0.25rem;
+  color: var(--foreground);
+}
+
+.activeSortIndicator {
+  margin-left: 0.25rem;
+  color: var(--blue);
+}
+
+.cell {
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  color: var(--foreground);
+  border-bottom: 1px solid var(--thead);
+}
+
+.footer {
+  margin-top: 1.5rem;
+  color: var(--foreground);
+}
+
+.footerText {
+  margin-top: 0.5rem;
+}
